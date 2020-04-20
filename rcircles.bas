@@ -4,7 +4,7 @@
   30 LET d=3-2*r
   40 GO SUB 300
   50 LET x=x+1
-  60 IF d>0 THEN LET y=y-1: LET d=d+4*(x-y)+10
+  60 IF d>0 THEN LET y=y-1: LET d=d+4*(x-y)+10: GO TO 80
   70 IF d<=0 THEN LET d=d+4*x+6
   80 GO SUB 300
   90 IF y>=x THEN GO TO 50
